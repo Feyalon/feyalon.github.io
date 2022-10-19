@@ -1,0 +1,46 @@
+<div class="content-section">
+   <div class="content-section-title">
+        projects:
+   </div>
+   <ul>
+        
+        <li (click)="istrue1()">
+            
+            kisu-api
+           
+        </li>
+        
+        <li (click)="istrue2()">
+            
+            Calendar
+            
+            
+        </li>
+        <li (click)="istrue3()">
+            
+            HaxNews
+        </li>
+   </ul>
+</div>
+
+    <div class="content-text" *ngIf="sec1">
+        Its website with api(Kitsu)
+        <br>
+        <a target="_blank"  href="https://github.com/Feyalon/Kitsu-api">
+            Project url
+        </a>
+    </div>
+    <div class="content-text" *ngIf="sec2">
+        This is simple calendar web-site
+        <br>
+        <a target="_blank"  href="https://github.com/Feyalon/Calendar">
+            Project url
+        </a>
+    </div>
+    <div class="content-text" *ngIf="sec3">
+        Web-site about news
+        <br>
+        <a target="_blank"  href="https://github.com/Feyalon/HaxNews">
+            Project url
+        </a>
+    </div>

@@ -1,0 +1,62 @@
+
+   <div class="app">
+    <div class="header">
+     <div class="menu-circle"></div>
+     <div class="header-menu">
+        <label class="dropdown">
+
+            <div class="dd-button">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              <li>
+                <a [routerLink]="['/home']" routerLinkActive="router-link-active"  href="">
+                    About
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/projects']" routerLinkActive="router-link-active"  href="">
+                    Projects
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/contact']" routerLinkActive="router-link-active"  href="">
+                    contact
+                </a>
+              </li>
+              <li class="divider"></li>
+              
+            </ul>
+            
+          </label>
+        <a class="menu-link btn" [routerLink]="['/home']" routerLinkActive="router-link-active"  href="#">About</a>
+        <a class="menu-link btn" [routerLink]="['/projects']" routerLinkActive="router-link-active"  href="#">My projects</a>
+        <a class="menu-link btn" [routerLink]="['/contact']" routerLinkActive="router-link-active"  href="#">Contact</a>
+        
+       </div>
+       <div class="header-profile">
+        <a target="_blank" href="https://github.com/Feyalon">
+            <img class="profile-img" src="https://i.pinimg.com/originals/87/2a/68/872a688790618b0d139ab3b7609db532.jpg" alt="">
+        </a>
+       </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="content-wrapper-header">
+            <div class="content-wrapper-context">
+                
+                <router-outlet></router-outlet>
+                <h3 class="img-content">
+                    <img class="img" style="width: 270px;" src="../assets/images/asuka-removebg-preview.png" alt="">
+                    
+                </h3>
+            </div>
+            
+        </div>
+    </div>
+    
+    </div>
